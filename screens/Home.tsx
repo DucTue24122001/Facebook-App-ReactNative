@@ -1,12 +1,13 @@
-import React from 'react'
-import { SafeAreaView } from 'react-native'
-import Navbar from '../components/Layout/Navbar/Navbar'
+import React, { useMemo } from 'react'
+import HomeScreen from '../components/Home/HomeScreen'
+import { useRoute } from '@react-navigation/native'
 
 const Home = () => {
+  const route=  useRoute()
   return (
-    <SafeAreaView>
-        <Navbar />
-    </SafeAreaView>
+    <>
+    <HomeScreen />
+    </>
   )
 }
 

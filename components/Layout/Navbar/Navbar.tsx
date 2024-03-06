@@ -3,12 +3,12 @@ import { View } from 'react-native'
 import NavTop from './NavTop'
 import NavBottom from './NavBottom'
 
-const Navbar = () => {
+const Navbar = ({currentRouter}) => {
   return (
     <>
         <View>
             <NavTop />
-            <NavBottom />
+            <NavBottom currentRouter={currentRouter} />
         </View>
     </>
   )
